@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  color: #4caf50; /* Green */
+}
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  height: 200px; /* Set height for consistency */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.cart-button {
+  background-color: #f39c12; /* Button background color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px 12px; /* Button padding */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  text-decoration: none; /* Remove underline */
+}
+
+.cart-button:hover {
+  background-color: #e67e22; /* Darker color on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.cart-button i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.navbar {
+  padding: 10px 20px; /* Adjusts the padding of the navbar */
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px; /* Adds space between the nav items */
+}
+
+.nav-link {
+  padding: 10px 15px; /* Adds padding to the links for better spacing */
+  transition: background-color 0.3s; /* Smooth background transition on hover */
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+.banner {
+  height: 500px; /* Set a specific height */
+  background-image: url("/assets/Home.png"); /* Your banner image */
+  background-size: cover; /* Cover the entire area while maintaining aspect ratio */
+  background-position: center; /* Center the image */
+  position: relative; /* Relative positioning for overlay */
+  color: white; /* Text color */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+/* Gradient overlay for better text visibility */
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1; /* Ensure it stays above the background */
+}
+
+/* Centered content styles */
+.banner-content {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Full height */
+  text-align: center; /* Center text */
+}
+
+/* Button styles */
+.btn-custom {
+  background-color: #ff7f50;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #e67e22; /* Darker shade on hover */
+}
+
+/* Styling for the carousel container */
+#materialCarousel {
+  padding: 20px 0;
+}
+
+
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Styling for carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(52, 58, 64, 0.8);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(0, 123, 255, 0.8);
+}
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .loading-spinner {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #28a745;
+  }
+
+  /* Category filter styling */
+  #category-filter {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Centered content */
+  .container {
+    position: relative;
+  }
+
+  /* Cart styles */
+  .cart-count {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+  }
+
+
+  
+@media (max-width: 768px) {
+  #materialCarousel .card {
+    width: 100%; /* Adjust card width on smaller screens */
+  }
+}

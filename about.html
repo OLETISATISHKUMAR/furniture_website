@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Furniture Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+        .about-section {
+            padding: 60px 0;
+        }
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #4caf50;
+            margin-bottom: 30px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .mission-vision {
+            background-color: #e9f5e9;
+            padding: 40px;
+            border-radius: 10px;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+        .values {
+            margin-top: 40px;
+            animation: fadeInRight 1s ease-in-out;
+        }
+        .values h5 {
+            color: #ff5722;
+        }
+        .history {
+            margin-top: 40px;
+            padding: 40px;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+        .cta {
+            background-color: #4caf50;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 50px;
+            animation: pulse 1.5s infinite;
+        }
+        .cta h4 {
+            margin-bottom: 15px;
+        }
+        .cta button {
+            background-color: #388e3c;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .cta button:hover {
+            background-color: #33691e;
+            transform: scale(1.1);
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <!-- Navbar placeholder -->
+
+    <section class="about-section bg-light">
+        <div class="container">
+            <h2 class="text-center animate__animated animate__fadeInDown">About Us</h2>
+            <p class="text-center animate__animated animate__fadeInUp">
+                Welcome to Elegant Furniture, where we blend style and comfort to create beautiful spaces. Our passion for quality craftsmanship and innovative design makes us the go-to destination for furniture that reflects your personal style.
+            </p>
+
+            <div class="mission-vision animate__animated animate__fadeInLeft">
+                <h3>Our Mission</h3>
+                <p>
+                    To provide high-quality, stylish furniture that enhances the comfort and aesthetics of your home while ensuring exceptional customer service and satisfaction.
+                </p>
+                <h3>Our Vision</h3>
+                <p>
+                    To be a leader in the furniture industry, recognized for our commitment to quality, sustainability, and customer-centric innovation.
+                </p>
+            </div>
+
+            <div class="values">
+                <h5>Our Values</h5>
+                <ul>
+                    <li>Quality: We prioritize high-quality materials and craftsmanship.</li>
+                    <li>Innovation: We strive for creative and stylish designs.</li>
+                    <li>Sustainability: We are committed to environmentally friendly practices.</li>
+                    <li>Customer Focus: We listen to our customers and value their feedback.</li>
+                </ul>
+            </div>
+
+            <div class="history animate__animated animate__fadeInLeft">
+                <h5>Our History</h5>
+                <p>
+                    Founded in 2000, Elegant Furniture started as a small workshop dedicated to crafting custom furniture. Over the years, we have grown into a renowned brand known for our innovative designs and commitment to quality. Today, we offer a wide range of furniture collections that cater to diverse styles and preferences, ensuring there’s something for everyone.
+                </p>
+            </div>
+
+            <div class="cta animate__animated animate__pulse">
+                <h4>Join Us in Creating Beautiful Spaces!</h4>
+                <p>
+                    Explore our collections and discover the perfect pieces for your home. Let us help you transform your space with elegance and style.
+                </p>
+                <button type="button" class="btn btn-light">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <!-- Footer placeholder -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <!-- Include the navbar script -->
+    <script src="js/footer.js"></script>
+    <!-- Include the footer script -->
+</body>
+</html>

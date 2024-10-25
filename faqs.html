@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | Furniture Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: #e76b47;
+        }
+
+        .card {
+            border: none; /* Remove default border */
+            border-radius: 10px; /* Rounded corners */
+            margin-bottom: 20px; /* Spacing between cards */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            transition: transform 0.3s; /* Smooth transition */
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+
+        .btn-link {
+            font-size: 1.2rem; /* Increase font size for button */
+            color: #ff7f50; /* Custom color */
+        }
+
+        .btn-link:hover {
+            color: #e76b47; /* Darker shade on hover */
+        }
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem; /* Smaller font on mobile */
+            }
+
+            .btn-link {
+                font-size: 1rem; /* Adjust button size on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div> <!-- Navbar placeholder -->
+
+    <div class="container mt-5">
+        <h1 class="text-center">Frequently Asked Questions</h1>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is your return policy?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        You can return any item within 30 days of purchase for a full refund, provided the item is in its original condition.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Do you offer international shipping?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Yes, we offer international shipping to select countries. Please check our shipping policy for details.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How can I track my order?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Once your order is shipped, you will receive an email with a tracking link to monitor your shipment.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+    </div> <!-- Footer placeholder -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script> <!-- Include the navbar script -->
+    <script src="js/footer.js"></script> <!-- Include the footer script -->
+</body>
+</html>
